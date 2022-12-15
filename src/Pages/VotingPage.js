@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../backend/firebase'
 import { Button, Card, Grid, Container, Image } from 'semantic-ui-react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, } from 'react-router-dom'
 import {
   collection,
   doc,
@@ -96,8 +96,8 @@ const VotingPage = () => {
   }
 
   return (
-    <Container>
-      <Grid className=" fluid card four column row my-5" stackable>
+    <Container >
+      <Grid className=" fluid card four column row  my-5" stackable>
         {candidateprofile &&
           candidateprofile.map((item) => (
             <Grid.Column key={item.id}>
@@ -116,7 +116,7 @@ const VotingPage = () => {
                   <Card.Header  className= "ms-4" style={{ marginTop: '5px' }}>
                     {item.name}
                   </Card.Header>
-				  <Card.Content className= "ms-5 ps-3" style={{ marginTop: '5px' }}>age: 
+				  <Card.Content className= "ms-5 ps-3" style={{ marginTop: '5px' }}><span className='h4 '>Age: </span> 
                     {item.age}
                   </Card.Content>
                  
@@ -126,13 +126,13 @@ const VotingPage = () => {
                   <div className='row'>
                     {currentUser.isAdmin && (
                       <>
-                        <Button
+                        <Button className="w-50 h-50"
                           color="green"
                           onClick={() => navigate(`/update/${item.id}`)}
                         >
                           Update
                         </Button>
-                        <Button className='my-3 col'
+                        <Button className='my-3 col w-50 h-50'
                           color="purple"
                           onClick={() => handleModal(item)}
                         >
@@ -149,19 +149,19 @@ const VotingPage = () => {
                       />
                     )}
                     <div className="content">
-                      <button
+                      <Button
                         onClick={() => VoteButtons(item)}
-                        color="red"
-                        className="upvote"
+                        color="green"
+                        className= " w-50 h-50 btn my-2 ms-5 ps-3"
                         disabled={currentUser.hasVoted}
                       >
                         Vote
-                      </button>
+                      </Button>
 					  {currentUser.hasVoted && (
                     <div>
-                      <p>
+                      <h5 className= "ms-5 ps-3" color="green">
                         {item.vote} vote{item.vote > 1 && 's'}
-                      </p>
+                      </h5>
                     </div>
                   )}
 

@@ -198,7 +198,7 @@ const AddEditUser = () => {
     navigate('/votingpage')
   }
   return (
-    <div className="m-5">
+    <div className="mt-5">
       <Grid
         centered
         verticalAlign="middle"
@@ -212,7 +212,7 @@ const AddEditUser = () => {
                 <Loader active inline="centered" size="huge" />
               ) : (
                 <>
-                  <h2> {id ? 'Update User' : 'Add User'}</h2>
+                  <h1 className='my-5'> {id ? 'Update Candidate' : 'Add Candidate'}</h1>
                   <Form onSubmit={handleSubmit}>
                     <Form.Input
                       label="Name"

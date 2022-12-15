@@ -145,10 +145,10 @@ function Navbar({ isAuth, setIsAuth }) {
 						<Link
 							className="mx-4 btn btn-outline-success border border-2 rounded-pill text-reset"
 							style={{ backgroundColor: "rgb(119, 145, 161)" }}
-							to="/createpost"
+							to="/add"
 						>
-							{" "}
-							Create Post{" "}
+						
+							Create Post
 						</Link>
 						<button
 							className="btn btn-outline-success border border-2 rounded-pill text-reset"
