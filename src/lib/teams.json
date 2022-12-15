@@ -1,0 +1,86 @@
+[
+    {
+        "_id": 1,
+        "name": "Demond Teko",
+        "profilepic": "image7.jpg",
+        "age": "age: 25",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Silas Akoneh",
+        "profilepic": "image8.jpg",
+        "age": "age: 23",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Gilbert Tima",
+        "profilepic": "image9.jpg",
+        "age":"age: 25",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Bernard Bassah",
+        "profilepic": "image7.jpg",
+        "age": "age: 25",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Cedric Namkat",
+        "profilepic": "image7.jpg",
+        "age": "age: 23",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Cliff Nji",
+        "profilepic": "image8.jpg",
+        "age": "age: 30",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Shembom Estella",
+        "profilepic": "image7.jpg",
+        "age": "age: 28",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Miriam Vagansi",
+        "profilepic": "image8.jpg",
+        "age": "age: 23",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Vanessiah Eyong",
+        "profilepic": "image9.jpg",
+        "age": "age: 23",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Lovette Kimboh",
+        "profilepic": "image7.jpg",
+        "age": "age: 26",
+        "votes":0
+    },
+    {
+        "_id": 3,
+        "name": "Samba Carlson",
+        "profilepic": "image8.jpg",
+        "age": "age: 25",
+        "votes":0
+    },
+    {
+        "_id": 2,
+        "name": "Mbianou Bradon",
+        "profilepic": "image7.jpg",
+        "age": "age: 23",
+        "votes":0
+    }
+]

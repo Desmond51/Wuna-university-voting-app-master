@@ -1,0 +1,22 @@
+.voting{
+position: relative;
+border: 3px solid #303030;
+border-radius: 4px;
+padding: 5px;
+display: flex;
+justify-content: center;
+
+}
+input{
+width: 50px;
+border:none;
+background: none;
+color:#f3aa92;
+font-size: 30px;
+margin: 0 10px;
+
+}
+button:action{
+color: #004eff;
+transform: scale(1.2);
+}
