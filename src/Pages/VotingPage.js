@@ -115,13 +115,10 @@ const VotingPage = () => {
                   <Card.Header style={{ marginTop: '10px' }}>
                     {item.name}
                   </Card.Header>
-                  {currentUser.hasVoted && (
-                    <div>
-                      <p>
-                        {item.vote} vote{item.vote > 1 && 's'}
-                      </p>
-                    </div>
-                  )}
+				  <Card.Content style={{ marginTop: '10px' }}>age:
+                    {item.age}
+                  </Card.Content>
+                 
                   <Card.Description> {item.info}</Card.Description>
                 </Card.Content>
                 <Card.Content extra>
@@ -159,6 +156,13 @@ const VotingPage = () => {
                       >
                         Vote
                       </button>
+					  {currentUser.hasVoted && (
+                    <div>
+                      <p>
+                        {item.vote} vote{item.vote > 1 && 's'}
+                      </p>
+                    </div>
+                  )}
 
                       <span className="vote"></span>
                     </div>
