@@ -10,7 +10,7 @@ function Login({ setIsAuth }) {
   const signInWithGoogle = () => {
     signInWithPopup(auth, provider).then(async (result) => {
       
-      navigate('/add')
+      navigate('/votingpage')
       console.log('result 2 after sign in', result)
       const userCollection = doc(db, 'users', result.user.uid)
 	  setIsAuth(result.user.uid)

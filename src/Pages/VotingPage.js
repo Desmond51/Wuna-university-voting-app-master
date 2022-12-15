@@ -97,32 +97,33 @@ const VotingPage = () => {
 
   return (
     <Container>
-      <Grid columns={3} className=" my-5" stackable>
+      <Grid className=" fluid card four column row my-5" stackable>
         {candidateprofile &&
           candidateprofile.map((item) => (
             <Grid.Column key={item.id}>
               <Card key={item.id}>
                 <Card.Content>
-                  <Image
+                  <Image className= "ms-4"
                     src={item.img}
                     size="large"
                     style={{
                       height: '150px',
-                      width: '100rem',
+                      width: '150px',
                       borderRadius: '50%',
+                      alignItems:"center"
                     }}
                   />
-                  <Card.Header style={{ marginTop: '10px' }}>
+                  <Card.Header  className= "ms-4" style={{ marginTop: '5px' }}>
                     {item.name}
                   </Card.Header>
-				  <Card.Content style={{ marginTop: '10px' }}>age:
+				  <Card.Content className= "ms-5 ps-3" style={{ marginTop: '5px' }}>age: 
                     {item.age}
                   </Card.Content>
                  
-                  <Card.Description> {item.info}</Card.Description>
+                  <Card.Description  className= "ms-5 ps-3"> {item.info}</Card.Description>
                 </Card.Content>
                 <Card.Content extra>
-                  <div>
+                  <div className='row'>
                     {currentUser.isAdmin && (
                       <>
                         <Button
@@ -131,7 +132,7 @@ const VotingPage = () => {
                         >
                           Update
                         </Button>
-                        <Button
+                        <Button className='my-3 col'
                           color="purple"
                           onClick={() => handleModal(item)}
                         >

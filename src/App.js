@@ -23,8 +23,8 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home isAuth={isAuth} />} />
 				<Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
-				<Route path="/add" element={<AddEditUser />} />
-				<Route path="/update/:id" element={<AddEditUser />} />
+				<Route path="/add" element={<AddEditUser isAuth={isAuth} />} />
+				<Route path="/update/:id" element={<AddEditUser isAuth={isAuth} />} />
 				<Route path="/votingpage" element={<VotingPage />} />
 				<Route path="/login" element={<Login setIsAuth={setIsAuth} />} />
 				<Route path="/votepage" element={<VotePage isAuth={isAuth} />} />
