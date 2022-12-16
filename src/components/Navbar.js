@@ -47,10 +47,9 @@ function Navbar({ isAuth, setIsAuth }) {
 							<Link
 								className="nav-link text-reset"
 								aria-current="page"
-								to="/votepage"
-							>
-								{" "}
-								Vote{" "}
+								to="/votingpage"
+							>							
+								Vote
 							</Link>
 						</li>
 						<li className="nav-item">

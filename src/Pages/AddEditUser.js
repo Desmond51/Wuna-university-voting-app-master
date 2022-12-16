@@ -41,15 +41,15 @@ const AddEditUser = () => {
   // Update candidateprofile
   useEffect(() => {
     id && getSingleUser()
-  }, [id])
+  }, [id]);
 
   const getSingleUser = async () => {
     const docRef = doc(db, 'candidateprofile', id)
     const snapshot = await getDoc(docRef)
     if (snapshot.exists()) {
-      setData({ ...snapshot.data() })
+      setData({ ...snapshot.data() });
     }
-  }
+  };
   //This section is to upload image from firebase storage
   useEffect(() => {
     const uploadFile = () => {
@@ -169,7 +169,7 @@ const AddEditUser = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    let errors = validate()
+    let errors = validate();
     if (Object.keys(errors).length) return setErrors(errors)
     setIsSubmit(true)
     if (!id) {
@@ -187,7 +187,7 @@ const AddEditUser = () => {
       }
     } else {
       try {
-        await updateDoc(doc(db, 'candidateprofile'), {
+        await updateDoc(doc(db, 'candidateprofile', id), {
           ...data,
           timestamp: serverTimestamp(),
         })

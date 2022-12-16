@@ -25,7 +25,7 @@ function Hero() {
             </h1>
             <p className="lead my-4 text-muted">Please be fair with your vote. This candidates will be the future of this department so endeavour to vote who you think is fit for this position</p>
             
-            <a href="/votepage" className="btn border border-2 rounded-pill btn-lg" style={{backgroundColor:"rgb(119, 145, 161)"}}>Place Vote</a>
+            <a href="/votingpage" className="btn border border-2 rounded-pill btn-lg" style={{backgroundColor:"rgb(119, 145, 161)"}}>Place Vote</a>
           </div>
           <div className="col-md-5 text-center d-none d-md-block">
             <span className="dezy" data-bs-placement="bottom" title="Students enjoying the learning process" >

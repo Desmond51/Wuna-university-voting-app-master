@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { db } from '../backend/firebase'
 import { Button, Card, Grid, Container, Image } from 'semantic-ui-react'
-import { useNavigate, } from 'react-router-dom'
+import { useNavigate,useParams } from 'react-router-dom'
 import {
   collection,
   doc,
@@ -97,6 +97,7 @@ const VotingPage = () => {
 
   return (
     <Container >
+     <Card.Group>
       <Grid className=" fluid card four column row  my-5" stackable>
         {candidateprofile &&
           candidateprofile.map((item) => (
@@ -105,12 +106,12 @@ const VotingPage = () => {
                 <Card.Content>
                   <Image className= "ms-4"
                     src={item.img}
-                    size="large"
+                    size="medium"
                     style={{
                       height: '150px',
                       width: '150px',
                       borderRadius: '50%',
-                      alignItems:"center"
+                     
                     }}
                   />
                   <Card.Header  className= "ms-4" style={{ marginTop: '5px' }}>
@@ -173,6 +174,7 @@ const VotingPage = () => {
             </Grid.Column>
           ))}
       </Grid>
+      </Card.Group>
     </Container>
   )
 }
