@@ -205,7 +205,7 @@ const AddEditUser = () => {
         columns={3}
         style={{ height: '80vh', width: '200vh' }}
       >
-        <Grid.Row>
+        <Grid>
           <Grid.Column textAlign="center">
             <div>
               {isSubmit ? (
@@ -270,7 +270,7 @@ const AddEditUser = () => {
               )}
             </div>
           </Grid.Column>
-        </Grid.Row>
+        </Grid>
       </Grid>
     </div>
   )

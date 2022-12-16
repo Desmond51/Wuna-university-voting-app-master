@@ -98,13 +98,13 @@ const VotingPage = () => {
   return (
     <Container >
      <Card.Group>
-      <Grid className=" fluid card four column row  my-5" stackable>
+      <Grid className=" four mt-5 align-item-center justify-content-center"  stackable>
         {candidateprofile &&
           candidateprofile.map((item) => (
-            <Grid.Column key={item.id}>
-              <Card key={item.id}>
+            
+              <Card key={item.id} className="m-2">
                 <Card.Content>
-                  <Image className= "ms-4"
+                  <Image className= "ms-4" 
                     src={item.img}
                     size="medium"
                     style={{
@@ -114,10 +114,10 @@ const VotingPage = () => {
                      
                     }}
                   />
-                  <Card.Header  className= "ms-4" style={{ marginTop: '5px' }}>
+                  <Card.Header  className= "ms-4 align-item-center justify-content-center" style={{ marginTop: '5px' }}>
                     {item.name}
                   </Card.Header>
-				  <Card.Content className= "ms-5 ps-3" style={{ marginTop: '5px' }}><span className='h4 '>Age: </span> 
+				  <Card.Content className= "ms-5 ps-3 align-item-center justify-content-center" style={{ marginTop: '5px' }}><span className='h4 '>Age: </span> 
                     {item.age}
                   </Card.Content>
                  
@@ -171,7 +171,7 @@ const VotingPage = () => {
                   </div>
                 </Card.Content>
               </Card>
-            </Grid.Column>
+           
           ))}
       </Grid>
       </Card.Group>
